@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Island Adventure Package",
+    "image": "reef1.jpg",
+    "description1": "Explore beautiful coastal destinations with guided activities, scenic views, and unforgettable travel experiences designed for adventure seekers.",
+    "description2": "This package is ideal for travelers looking for a balance of relaxation and outdoor exploration during their getaway."
+  },
+  {
+    "name": "Ocean Discovery Getaway",
+    "image": "reef2.jpg",
+    "description1": "Enjoy exciting waterfront experiences, relaxing accommodations, and convenient access to popular destination highlights.",
+    "description2": "This getaway is a great choice for guests who want to experience the beauty of a travel destination while staying within budget."
+  },
+  {
+    "name": "Luxury Escape Package",
+    "image": "reef3.jpg",
+    "description1": "Experience premium travel accommodations with upgraded amenities, relaxing views, and memorable activities for a more elevated vacation.",
+    "description2": "This option is perfect for customers looking for a more refined and comfortable travel package with added features."
+  }
+]

@@ -36,36 +36,14 @@
 					<div class="body">
 						<h1>{{title}}</h1>
 						<ul id="sites">
+							{{#each trips}}
 							<li>
-								<a href="/travel"><img src="/images/reef1.jpg" alt="Img"></a>
-								<h2><a href="/travel">Island Adventure Package</a></h2>
-								<p>
-									Explore beautiful coastal destinations with guided activities, scenic views, and unforgettable travel experiences designed for adventure seekers.
-								</p>
-								<p>
-									This package is ideal for travelers looking for a balance of relaxation and outdoor exploration during their getaway.
-								</p>
+								<a href="/travel"><img src="/images/{{this.image}}" alt="Img"></a>
+								<h2><a href="/travel">{{this.name}}</a></h2>
+								<p>{{this.description1}}</p>
+								<p>{{this.description2}}</p>
 							</li>
-							<li>
-								<a href="/travel"><img src="/images/reef2.jpg" alt="Img"></a>
-								<h2><a href="/travel">Ocean Discovery Getaway</a></h2>
-								<p>
-									Enjoy exciting waterfront experiences, relaxing accommodations, and convenient access to popular destination highlights.
-								</p>
-								<p>
-									This getaway is a great choice for guests who want to experience the beauty of a travel destination while staying within budget.
-								</p>
-							</li>
-							<li>
-								<a href="/travel"><img src="/images/reef3.jpg" alt="Img"></a>
-								<h2><a href="/travel">Luxury Escape Package</a></h2>
-								<p>
-									Experience premium travel accommodations with upgraded amenities, relaxing views, and memorable activities for a more elevated vacation.
-								</p>
-								<p>
-									This option is perfect for customers looking for a more refined and comfortable travel package with added features.
-								</p>
-							</li>
+							{{/each}}
 						</ul>
 					</div>
 				</div>

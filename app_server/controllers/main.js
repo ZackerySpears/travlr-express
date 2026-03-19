@@ -1,3 +1,5 @@
+const trips = require('../data/trips.json');
+
 const index = (req, res) => {
   res.render('index', { title: 'Travlr Getaways' });
 };
@@ -23,7 +25,10 @@ const rooms = (req, res) => {
 };
 
 const travel = (req, res) => {
-  res.render('travel', { title: 'Travel Packages' });
+  res.render('travel', {
+    title: 'Travel Packages',
+    trips
+  });
 };
 
 module.exports = {
