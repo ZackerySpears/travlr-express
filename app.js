@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const hbs = require('hbs');
+require('./app_server/models/db');
 
 const app = express();
 
@@ -16,7 +17,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 const indexRouter = require('./app_server/routes/index');
+const apiRouter = require('./app_server/routes/api');
+
 app.use('/', indexRouter);
+app.use('/api', apiRouter);
 
 // Start server
 const port = 3000;
