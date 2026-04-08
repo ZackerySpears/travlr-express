@@ -1,0 +1,8 @@
+<div class="container mt-4">
+  <h2 class="mb-3">Trip Administration</h2>
+  <div class="row">
+    <div class="col-md-4 mb-3" *ngFor="let trip of trips">
+      <app-trip-card [trip]="trip" (edit)="selectTrip($event)"></app-trip-card>
+    </div>
+  </div>
+</div>

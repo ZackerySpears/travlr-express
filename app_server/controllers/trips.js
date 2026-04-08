@@ -1,15 +1,17 @@
 const mongoose = require('mongoose');
 const Trip = mongoose.model('trips');
 
-const tripsList = async (req, res) => {
-    try { 
-        const trips = await Trip.find();
-        res.status(200).json(trips);
-    } catch (error) {
-        res.status(500).json({ message: error.message});
-    }
-};
+const tripsDeleteTrip = async (req, res) => {
+  try {
+    const trip = await Trip.findByIdAndDelete(req.params.tripId);
 
-module.exports = {
-    tripsList
+    if (!trip) {
+      return res.status(404).json({ message: 'trip not found' });
+    }
+
+    res.status(204).send();
+  } catch (err) {
+    console.error(err);
+    res.status(500).json(err);
+  }
 };

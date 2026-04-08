@@ -1,0 +1,8 @@
+<app-trip-form
+  [trip]="selectedTrip"
+  (saved)="onTripSaved()">
+</app-trip-form>
+
+<app-trip-list
+  (editTrip)="onTripEdit($event)">
+</app-trip-list>
